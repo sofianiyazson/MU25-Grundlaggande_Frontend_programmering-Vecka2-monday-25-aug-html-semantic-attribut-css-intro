@@ -1,0 +1,15 @@
+Självständiga övningar
+
+Bygg en produktpresentationssida med semantisk HTML:
+
+Titel (produktnamn)
+
+Beskrivning i <p>
+
+Bild med alt
+
+Navigationsmeny med 3 länkar (#)
+
+Footer med kontaktinfo
+
+💡 Extra: Lägg till en sektion med 3 produkter (lista eller flera <article>).

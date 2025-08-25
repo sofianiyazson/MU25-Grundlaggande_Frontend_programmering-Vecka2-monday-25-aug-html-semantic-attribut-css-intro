@@ -1,0 +1,293 @@
+🧭 Workshop – 🚀 HTML Semantik och Attribut, Code reviews & diskussioner  
+⏰ Tid: ca 3h  
+📚 Kurs: Grundläggande Frontend-programmering  
+📅 Vecka 2 – Måndag 25 aug  
+
+--------------------------------------------------
+🎯 Lektionsmål 
+Efter lektionen ska studenterna kunna:
+
+✅ Förklara varför semantiska HTML-taggar är viktiga  
+✅ Använda semantiska element i en enkel layout  
+✅ Förstå skillnaden mellan block- och inline-element  
+✅ Använda vanliga attribut (id, class, href, src, alt, title, aria-*)  
+✅ Strukturera filer och mappar för ett webbprojekt  
+
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+📝 Lektionsplanering (3 timmar)
+
+Inledning & Agenda
+
+Teori (Slides: Kort repetition (10 Min), Semantisk HTML & struktur)  
+- Repetition av HTML-grunder
+
+- Semantiska taggar: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<figure>`  
+- Varför semantik är viktigt (tillgänglighet(skärmläsare förstår strukturen), SEO(Google rankar bättre om koden är begriplig), kodunderhåll(lättare att läsa, bygga vidare och samarbeta))  
+
+- Block- vs inline-element: <
+  - Block: <div>, <p>, <section>, <article>
+  - Inline: <a>, <span>, <img>, <strong>
+  - Visa snabbt i webbläsaren att block bryter rad och inline inte gör det.
+
+- HTML-attribut: id, class, href, src, alt, title, aria-*  
+  - Eexempel:
+    <a href="https://example.com" title="Exempellänk">Klicka här</a>
+    <img src="bild.jpg" alt="Beskrivning av bilden">
+
+- Filstruktur och namngivning 
+  - Exempel: 
+projektmapp/
+ ├── index.html
+ ├── css/
+ │    └── style.css
+ ├── img/
+ │    └── produkt.jpg
+
+--------------------------------------------------
+👨‍💻 Code-along:  
+- Skapa en enkel “bloggartikel”-layout med header, nav, main, article, aside och footer  
+- Lägga in bilder med alt  
+- Använda både block- och inline-element  
+
+--------------------------------------------------
+🧠 Självständiga övningar:  
+- Bygg en produktpresentationssida med:  
+  - Titel, 
+  - beskrivning
+  - bild  
+  - Navigationsmeny med 3 länkar (`#`)  
+  - Footer med kontaktinfo  
+
+Extra: Lägg till en sektion med 3 produkter (lista eller flera <article>).
+--------------------------------------------------
+📢 Code Review + Reflektion/Q&A
+
+1: Code Review (2 stars and a wish) i smågrupper:
+
+En student visar upp sin produktpresentationssida (eller en övning/projekt från förra veckan).
+
+De andra ger feedback: två saker som är bra och en förbättringsmöjlighet.
+
+Läraren går runt och stöttar grupperna.
+
+--------------------------------------------------
+Diskussionsfrågor (smågrupper → helklass):
+
+Vad var svårast idag – semantiken eller attributen?
+
+Varför är tillgänglighet viktigt i webbutveckling?
+
+Hur märker man skillnad mellan “div-spagetti/div-hell” och semantisk kod?
+
+Vilka element kändes naturliga – vilka kändes ovana?
+
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+📢 PowerPoint: Talarmanus
+
+🎤 Inledning:
+"Välkomna tillbaka! Förra gången gick vi igenom grunderna i HTML. Vi kör en kort repetition sen tar vi det ett steg längre – vi ska lära oss använda semantiska element, förstå block vs inline, och jobba med attribut. Det här kommer göra vår kod både mer professionell och lättare att förstå."
+
+-------------------------------------
+
+🟨 Repetition HTML-grunder 
+
+-------------------------------------
+
+🟨 Semantiska taggar 
+
+🗣️ Talarmanus:
+"Semantiska taggar beskriver *meningen* med innehållet. 
+
+Exempel:  
+- `<header>` för sidhuvud  
+- `<nav>` för navigering  
+- `<main>` för huvudinnehåll  
+- `<section>` för en logisk sektion  
+- `<article>` för självständigt innehåll (t.ex. en bloggpost)  
+- `<aside>` för sidoinnehåll  
+- `<footer>` för sidfot  
+- `<figure>` och `<figcaption>` för bilder och bildtexter  
+
+Fördelarna är tre:  
+1. Tillgänglighet – skärmläsare förstår strukturen.  
+2. SEO – Google fattar vad sidan handlar om.  
+3. Underhåll – lättare att läsa och jobba vidare med."  
+
+-------------------------------------
+🟨 Block vs inline 
+
+🗣️ Talarmanus:
+"Blockelement tar alltid hela raden: `<div>`, `<p>`, `<section>`.  
+Inline ligger kvar på samma rad: `<span>`, `<a>`, `<img>`."
+
+-------------------------------------
+🟨 HTML-attribut  
+
+🗣️ Talarmanus:
+"Attribut är extra info i starttaggen:  
+- `id` och `class` → identifiering för CSS/JS  
+- `href` → länkadress  
+- `src` → bildens källa  
+- `alt` → alternativtext (tillgänglighet)  
+- `title` → tooltip när man hovrar  
+- `aria-*` → tillgänglighetsattribut  
+
+Exempel:
+```html
+<a href="https://example.com" 
+title="Exempellänk">Klicka här</a>
+
+<img src="produkt.jpg" alt="Produktbild på en stol">
+```"
+
+-------------------------------------
+🟨 Filstruktur & namngivning 
+
+🗣️ Talarmanus:
+"Vi organiserar filer i mappar:  
+projektmapp/
+├── index.html
+├── css/
+│ └── style.css
+├── img/
+│ └── produkt.jpg
+
+Alltid små bokstäver, inga mellanslag. Håll strukturen konsekvent – det gör jobbet i team mycket lättare."
+
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+💻 Code-Along – Bloggartikel-layout
+
+📂 Mappstruktur:
+projekt/
+├── index.html
+├── img/
+│ └── artikelbild.jpg
+
+1: index.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Min blogg</title>
+</head>
+<body>
+  <header>
+    <h1>Min blogg</h1>
+    <nav>
+      <a href="#">Hem</a> |
+      <a href="#">Artiklar</a> |
+      <a href="#">Om mig</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Första inlägget</h2>
+      <p>Detta är min första bloggartikel. Här skriver jag lite text...</p>
+      <figure>
+        <img src="img/artikelbild.jpg" alt="Text som beskriver bilden">
+        <figcaption>En bildtext under bilden</figcaption>
+      </figure>
+    </article>
+
+    <aside>
+      <h3>Sidoinformation</h3>
+      <p>Här kan vi lägga länkar eller reklambanners.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Min blogg – Kontakt: info@example.com</p>
+  </footer>
+</body>
+</html>
+
+🗣️ Talarmanus:
+"Här har vi använt alla semantiska taggar i en enkel layout. Lägg märke till att <nav> håller våra länkar, <article> är själva innehållet, och <aside> är sidoinformation."
+
+------------------------------
+------------------------------
+------------------------------
+🧠 Självständiga övningar
+
+Bygg en produktpresentationssida med semantisk HTML:
+
+Titel (produktnamn)
+
+Beskrivning i <p>
+
+Bild med alt
+
+Navigationsmeny med 3 länkar (#)
+
+Footer med kontaktinfo
+
+💡 Extra: Lägg till en sektion med 3 produkter (lista eller flera <article>).
+
+------------------------------
+------------------------------
+------------------------------
+📢 Code reviewa (2stars and a wish) + reflektion & Q&A
+
+1: Code review:
+Visa upp produktpresentationssida eller en lite större övning från förra veckan eller projekt och de andra i gruppen skall ge 2 stars and a wish som feedback. Läraren hoppar runt i grupperna.
+
+2: Diskussion: 
+
+Diskutera i smågrupper sen presentera för helklass:
+
+Vad var svårast idag – semantiken eller attributen?
+
+Varför är tillgänglighet viktigt i webbutveckling?
+
+Hur märker man skillnad mellan “div-spagetti/div-hell” och semantisk kod?
+
+Vilka element kändes naturliga – vilka kändes ovana?
+
+------------------------------
+------------------------------
+------------------------------
+📑 Cheat Sheet – HTML Semantik & Attribut
+
+Semantiska taggar:
+
+<header> – sidhuvud
+
+<nav> – navigering
+
+<main> – huvudinnehåll
+
+<section> – logisk sektion
+
+<article> – självständigt innehåll
+
+<aside> – sidoinnehåll
+
+<footer> – sidfot
+
+<figure> + <figcaption> – bilder & bildtext
+
+------------------------------
+Vanliga attribut:
+
+id – unik identifierare
+
+class – grupperar element
+
+href – länkadress
+
+src – källa (bild/fil)
+
+alt – alternativtext för bilder
+
+title – tooltip
+
+aria-* – tillgänglighet
+
